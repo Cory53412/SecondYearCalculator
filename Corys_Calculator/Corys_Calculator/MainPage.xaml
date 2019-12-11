@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Corys_Calculator"
+             x:Class="Corys_Calculator.MainPage">
+
+    <Grid BackgroundColor="Gray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!--number Buttons-->
+
+        <Button x:Name="btn7" Grid.Row="1" Grid.Column="0" Text="7" TextColor="Black" BackgroundColor="White" CornerRadius="30"
+                Clicked="Btn7_Clicked"/>
+        <Button x:Name="btn8" Grid.Row="1" Grid.Column="1" Text="8" TextColor="Black" BackgroundColor="White" CornerRadius="30"
+                Clicked="Btn8_Clicked"/>
+        <Button x:Name="btn9" Grid.Row="1" Grid.Column="2" Text="9" TextColor="Black" BackgroundColor="White" CornerRadius="30"
+                Clicked="Btn9_Clicked"/>
+
+        <Button x:Name="btn4" Grid.Row="2" Grid.Column="0" Text="4" TextColor="Black" BackgroundColor="White" CornerRadius="30"
+                Clicked="Btn4_Clicked"/>
+        <Button x:Name="btn5" Grid.Row="2" Grid.Column="1" Text="5" TextColor="Black" BackgroundColor="White" CornerRadius="30"
+                Clicked="Btn5_Clicked"/>
+        <Button x:Name="btn6" Grid.Row="2" Grid.Column="2" Text="6" TextColor="Black" BackgroundColor="White" CornerRadius="30"
+                Clicked="Btn6_Clicked"/>
+
+        <Button x:Name="btn1" Grid.Row="3" Grid.Column="0" Text="1" TextColor="Black" BackgroundColor="White" CornerRadius="30"
+                Clicked="Btn1_Clicked"/>
+        <Button x:Name="btn2" Grid.Row="3" Grid.Column="1" Text="2" TextColor="Black" BackgroundColor="White" CornerRadius="30"
+                Clicked="Btn2_Clicked"/>
+        <Button x:Name="btn3" Grid.Row="3" Grid.Column="2" Text="3" TextColor="Black" BackgroundColor="White" CornerRadius="30"
+                Clicked="Btn3_Clicked"/>
+
+        <Button x:Name="btn0" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"  Text="0" TextColor="Black"  CornerRadius="30"
+                BackgroundColor="White"
+                Clicked="Btn0_Clicked"/>
+        <!-- decimal point -->
+        <Button x:Name="btnDecimal" Grid.Row="4" Grid.Column="0" Text="."  CornerRadius="30"
+                TextColor="Black" BackgroundColor="White"
+                Clicked="BtnDecimal_Clicked"/>
+
+
+        <!--Math Button-->
+        <Button x:Name="btnPlus" Grid.Row="1" Grid.Column="3" Text="+" TextColor="White" BackgroundColor="Orange" CornerRadius="30"
+                Clicked="BtnPlus_Clicked"/>
+        <Button x:Name="btnMinus" Grid.Row="2" Grid.Column="3" Text="-" TextColor="White" BackgroundColor="Orange" CornerRadius="30"
+                Clicked="BtnMinus_Clicked"/>
+        <Button x:Name="btnMultiply" Grid.Row="3" Grid.Column="3" Text="*" TextColor="White" BackgroundColor="Orange" CornerRadius="30"
+                Clicked="BtnMultiply_Clicked"/>
+        <Button x:Name="btnDivide" Grid.Row="4" Grid.Column="3"   Text="/" TextColor="White" BackgroundColor="Orange" CornerRadius="30"
+                Clicked="BtnDivide_Clicked"/>
+        <Button x:Name="btnEquals" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Text="=" TextColor="White" BackgroundColor="Orange"
+               CornerRadius="30" Clicked="BtnEquals_Clicked"/>
+
+
+        <Button x:Name="btnClear" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Text="C" TextColor="Black" 
+                BackgroundColor="Orange" CornerRadius="30"
+                Clicked="BtnClear_Clicked"/>
+
+
+        <!-- entry Box-->
+        <Entry x:Name="textDisplay" Grid.Row ="0" Grid.Column ="0" Grid.ColumnSpan="4" 
+                HorizontalTextAlignment="End" Placeholder="0" 
+                FontSize="30" TextColor="White"
+               BackgroundColor="Black">
+
+        </Entry>
+
+        <!--Clear Entry
+        <Button x:Name="btnClearentry" Grid.Row="5" Grid.Column="0" Text="CE" TextColor="Black" BackgroundColor="White"
+                Clicked="BtnClearentry_Clicked"/>-->
+
+        <!--<Button x:Name="btnBackspace" Grid.Row="5" Grid.Column="2" Text="%" TextColor="White" BackgroundColor="Black"
+               Clicked="BtnBackspace_Clicked"/>
+        -->
+
+        <!-- positive and negative button-->
+        <!-- <Button x:Name="btnPositiveNegative" Grid.Row="5" Grid.Column="0" Text="+-" TextColor="White" BackgroundColor="Black"
+         Clicked="BtnPositiveNegative_Clicked"/> -->
+
+    </Grid>
+
+</ContentPage>
